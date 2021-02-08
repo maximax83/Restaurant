@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="page">
+
+
+
+
+
+	<header class="header">
+		<div class="wrapper header__content">
+			<a class="logo" href="#"><img src="img/logo.svg" alt=""></a>
+			<nav class="nav">
+				<a class="nav__item nav__item_pointer" href="#welcome">WELCOME</a>
+				<a class="nav__item" href="#about">ABOUT</a>
+				<a class="nav__item" href="#pricing">PRICING</a>
+				<a class="nav__item" href="#beer">BEER</a>
+				<a class="nav__item" href="#bread">BREAD</a>
+				<a class="nav__item" href="#featured">FEATURED</a>
+				<a class="nav__item" href="#reservation">RESERVATION</a>
+				<a class="nav__item" href="#contact">CONTACT</a>
+			</nav>
+			<div class="burger">
+				<div class="burger__center-line"></div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+	<section id="welcome">
+		<div class="title-screen title-screen_welcome">
+			<h1>
+				<img src="img/restaurant-title.svg" alt="Restaurant">
+				" Best In The City "
+			</h1>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="about" class="page__screen">
+		<div class="desc-content wrapper">
+			<div class="desc-content__module">
+				<h2 class="desc-content__title">About Us</h2>
+				<img class="desc-content__ico" src="img/ico/utensils-solid.svg" alt="">
+				<p class="desc-content__txt">Restaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.</p>
+			</div>
+			<div class="desc-content__module desc-content__img-block">
+				<div class="desc-content__img-s ratio ratio_88">
+					<img src="img/kabob.jpg" alt="">
+				</div>
+				<div class="desc-content__img-s ratio ratio_88">
+					<img src="img/limes.jpg" alt="">
+				</div>
+				<div class="desc-content__img-s ratio ratio_88">
+					<img src="img/radish.jpg" alt="">
+				</div>
+				<div class="desc-content__img-s ratio ratio_88">
+					<img src="img/corn.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="pricing">
+		<div class="title-screen title-screen_pricing">
+			<h2><span class="title-screen__accent">Affordable</span> Pricing</h2>
+		</div>
+		<div class="page__screen">
+			<div class="pricing-demo">
+				<ul class="pricing-demo__filter-list">
+					<li class="pricing-demo__filter active" data-filter=all>All</li>
+					<li class="pricing-demo__filter" data-filter=breakfast>Breakfast</li>
+					<li class="pricing-demo__filter" data-filter=special>Special</li>
+					<li class="pricing-demo__filter" data-filter=desert>Desert</li>
+					<li class="pricing-demo__filter" data-filter=dinner>Dinner</li>
+				</ul>
+				<ul class="pricing-demo__card-list">
+					<li class="pricing-demo__card [ all breakfast ] ">
+						<img src="img/food_icon01.jpg" alt="">
+						<div class="pricing-demo__card-price">$20</div>
+					</li>
+					<li class="pricing-demo__card [ all special dinner ] ">
+						<img src="img/food_icon02.jpg" alt="">
+						<div class="pricing-demo__card-price">$20</div>
+					</li>
+					<li class="pricing-demo__card [ all breakfast dinner ] ">
+						<img src="img/food_icon03.jpg" alt="">
+						<div class="pricing-demo__card-price">$18</div>
+					</li>
+					<li class="pricing-demo__card [ all special ] ">
+						<img src="img/food_icon04.jpg" alt="">
+						<div class="pricing-demo__card-price">$15</div>
+					</li>
+					<li class="pricing-demo__card [ all dinner ] ">
+						<img src="img/food_icon05.jpg" alt="">
+						<div class="pricing-demo__card-price">$20</div>
+					</li>
+					<li class="pricing-demo__card [ all special ] ">
+						<img src="img/food_icon06.jpg" alt="">
+						<div class="pricing-demo__card-price">$22</div>
+					</li>
+					<li class="pricing-demo__card [ all desert ] ">
+						<img src="img/food_icon07.jpg" alt="">
+						<div class="pricing-demo__card-price">$32</div>
+					</li>
+					<li class="pricing-demo__card [ all breakfast desert ] ">
+						<img src="img/food_icon08.jpg" alt="">
+						<div class="pricing-demo__card-price">$38</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="beer">
+		<div class="title-screen title-screen_beer">
+			<h2>Great <span class="title-screen__accent">Place</span> To Enjoy</h2>
+		</div>
+		<div class="page__screen">
+			<div class="desc-content wrapper">
+				<div class="desc-content__module">
+					<div class="desc-content__img-l ratio ratio_79">
+						<img src="img/beer_spec.jpg" alt="">
+					</div>
+				</div>
+				<div class="desc-content__module">
+					<h2 class="desc-content__title">OUR BEER</h2>
+					<img class="desc-content__ico" src="img/ico/beer-solid.svg" alt="">
+					<p class="desc-content__txt">Here at Restaurant we’re all about the love of beer. New and bold flavors enter our doors every week, and we can’t help but show them off. While we enjoy the classics, we’re always passionate about discovering something new, so stop by and experience our craft at its best.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="bread">
+		<div class="title-screen title-screen_bread">
+			<h2>Our Breakfast <span class="title-screen__accent">Menu</span></h2>
+		</div>
+		<div class="page__screen">
+			<div class="desc-content wrapper">
+				<div class="desc-content__module">
+					<h2 class="desc-content__title">OUR BREAD</h2>
+					<img class="desc-content__ico" src="img/ico/bread-slice-solid.svg" alt="">
+					<p class="desc-content__txt">We love the smell of fresh baked bread. Each loaf is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.</p>
+				</div>
+				<div class="desc-content__module desc-content__img-block">
+					<div class="desc-content__img-s ratio ratio_108">
+						<img src="img/bread1.jpg" alt="">
+					</div>
+					<div class="desc-content__img-s ratio ratio_108">
+						<img src="img/bread2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="featured">
+		<div class="title-screen title-screen_featured">
+			<h2>Our Featured Dishes <span class="title-screen__accent">Menu</span></h2>
+		</div>
+		<div class="page__screen">
+			<div class="desc-content wrapper">
+				<div class="desc-content__module">
+					<div class="ratio ratio_66">
+						<div class="ratio__content slider">
+							<div class="slider__track">
+								<div class="slider__slide"><img src="img/slider1.jpg" alt=""></div>
+								<div class="slider__slide"><img src="img/slider2.jpg" alt=""></div>
+								<div class="slider__slide"><img src="img/slider3.jpg" alt=""></div>
+							</div>
+							<div class="slider__pager"></div>
+						</div>
+					</div>
+				</div>
+				<div class="desc-content__module">
+					<h2 class="desc-content__title">Have A Look To Our Dishes!</h2>
+					<img class="desc-content__ico" src="img/ico/hotdog-solid.svg" alt="">
+					<p class="desc-content__txt">Each food is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="reservation">
+		<div class="title-screen title-screen_reservation">
+			<h2>Reserve A Table!</h2>
+		</div>
+		<div class="page__screen">
+			<div class="reserv wrapper">
+				<form class="reserv__form" action="#" method="post">
+					<div class="reserv__form-col">
+						<input class="form-input" type="text" name="first_name" placeholder="First Name" required="required">
+						<input class="form-input" type="text" name="last_name" placeholder="Last Name" required="required">
+						<input class="form-input" type="text" name="state" placeholder="State" required="required">
+						<input class="form-input" type="text" name="datepicker" placeholder="Reservation Date" required="required">
+					</div>
+					<div class="reserv__form-col">
+						<input class="form-input" type="tel" name="phone" placeholder="Phone" required="required">
+						<input class="form-input" type="text" name="guest" placeholder="Guest Number" required="required">
+						<input class="form-input" type="email" name="email" placeholder="Email" required="required">
+						<input class="form-input" type="text" name="subject" placeholder="Subject" required="required">
+					</div>
+					<button class="form-btn" type="submit">Reserve</button>
+				</form>
+				<div class="reserv__hours">
+					<h3 class="reserv__title">Hours</h3>
+					<p class="reserv__txt">Monday to Friday: 7:30 AM - 11:30 AM</p>
+					<p class="reserv__txt">Saturday & Sunday: 8:00 AM - 9:00 AM</p>
+					<p class="reserv__txt">Monday to Friday: 12:00 PM - 5:00 PM</p>
+					<p class="reserv__txt">Monday to Saturday: 6:00 PM - 1:00 AM</p>
+					<p class="reserv__txt">Sunday to Monday: 5:30 PM - 12:00 AM</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="contact">
+		<div class="contact">
+			<div class="contact__conent wrapper">
+				<div class="contact__module">
+					<h2 class="contact__title">FOLLOW</h2>
+					<div class="contact__ico-group">
+						<a class="contact__ico contact__link" href="#"><img src="img/ico/twitter-brands.svg" alt=""></a>
+						<a class="contact__ico contact__link" href="#"><img src="img/ico/github-alt-brands.svg" alt=""></a>
+						<a class="contact__ico contact__link" href="#"><img src="img/ico/linkedin-in-brands.svg" alt=""></a>
+						<a class="contact__ico contact__link" href="#"><img src="img/ico/envelope-solid.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="contact__module">
+					<h2 class="contact__title">OR DIAL</h2>
+					<a class="contact__link" href="tel:883-335-6524">(941) 883-335-6524</a>
+				</div>
+			</div>
+		</div>
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7238.4279045697585!2d91.87087912446663!3d24.89068268615863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37505558dd0be6a1%3A0x65c7e47c94b6dc45!2sTechnext%20Limited!5e0!3m2!1sru!2skz!4v1612594766102!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="feedback page__screen">
+			<form class="feedback__form  wrapper" action="#" method="post">
+				<div class="feedback__form-col">
+					<input class="form-input" type="text" name="name" placeholder="Name" required="required">
+					<input class="form-input" type="email" name="email" placeholder="Email" required="required">
+					<input class="form-input" type="text" name="subject" placeholder="Subject" required="required">
+				</div>
+				<div class="feedback__form-col">
+					<textarea class="form-input form-input_textarea" name="message" placeholder="Message" required="required"></textarea>
+				</div>
+				<button class="form-btn" type="submit">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+
+
+
+
+</body>
+</html>

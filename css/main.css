@@ -1,0 +1,806 @@
+ /*Сброс/нормализация стилей start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+body {margin: 0;}
+
+h1,h2,h3,h4,h5,h6 {
+	font: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {vertical-align: top;}
+
+p {margin: 0;}
+
+ol, ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: inherit;
+	margin: 0;
+}
+
+button {cursor: pointer;}
+
+textarea {overflow: auto;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+/* Сброс/нормализация стилей end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Глобальные стили start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+.page {
+	font-family: helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #2f2e2f;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page__screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 60px 0 30px;
+}
+
+/* Глобальные стили Полноэкранный заголовок */
+.title-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 80px 15px 40px;
+	background: no-repeat center/cover fixed;
+	color: #fff;
+	font-size: 4.5rem;
+	font-weight: 900;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.title-screen__accent {
+	border-bottom: 10px solid;
+}
+
+@media (max-width: 900px) {
+
+	.title-screen {
+		font-size: 3.6rem;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.title-screen {
+		font-size: 2.9rem;
+	}
+
+}
+
+/* Глобальные стили Пропорционнальные блоки */
+.ratio {
+	position: relative;
+}
+
+.ratio:after{
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.ratio.ratio_88:after{
+	padding-top: 88%;
+}
+
+.ratio.ratio_79:after{
+	padding-top: 79%;
+}
+
+.ratio.ratio_66:after{
+	padding-top: 66%;
+}
+
+.ratio.ratio_108:after{
+	padding-top: 108%;
+}
+
+.ratio__content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.ratio>img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Глобальные стили Секция описывающего контента */
+.desc-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.desc-content__module {
+	width: 50%;
+	padding: 15px;
+}
+
+.desc-content__title {
+	max-width: 280px;
+	margin: 0 auto;
+	padding: 8px 16px;
+	border: 1px solid #2f2e2f;
+	font-size: 2rem;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 0.04em;
+}
+
+.desc-content__ico {
+	display: block;
+	height: 32px;
+	margin: 30px auto;
+}
+
+.desc-content__txt {
+	font-size: 1.25rem;
+	line-height: 1.75em;
+	text-align: justify;
+}
+
+.desc-content__img-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: start;
+}
+
+.desc-content__img-s {
+	width: 48%;
+	margin: 1%;
+}
+
+.desc-content__img-l {
+	width: 80.18%;
+}
+
+@media (max-width: 900px) {
+
+	.desc-content__txt {
+		font-size: 1.25rem;
+		font-size: 1rem;
+	}
+
+	.desc-content__title {
+		font-size: 2rem;
+		font-size: 1.6rem;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.desc-content__module {
+		width: 100%;
+	}
+
+}
+
+/* Глобальные стили Элементы формы */
+.form-input {
+	width: calc(100% - 30px);
+	margin: 15px;
+	padding: 15px;
+	border: 1px solid rgba(13, 12, 12, 0.23);
+	color: #727272;
+	font-size: 0.8rem;
+	text-transform: capitalize;
+}
+
+.form-input_textarea {
+	height: calc(100% - 30px);
+	min-height: 150px;
+	resize:none;
+}
+
+.form-btn {
+	min-width: 180px;
+	margin: 15px;
+	padding: 15px;
+	border: none;
+	border-radius: 3px;
+	background: rgba(80, 160, 108, 1);
+	color: #fff;
+}
+
+.form-input:focus,
+.form-btn:focus {
+	outline: 0;
+}
+
+.form-input.key:focus,
+.form-btn.key:focus {
+	outline: auto;
+}
+/* Глобальные стили end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Шапка сайта start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	padding: 10px 0;
+	background: #202020;
+}
+
+.header:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #202020;
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	padding: 0 20px 0 0;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	color: #fff;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav__item {
+	display: block;
+	padding: 15px;
+}
+
+.nav__item:hover {
+	color: #96E16B;
+}
+
+.nav__item_pointer {
+	border-bottom: 1px solid #96E16B;
+}
+
+.burger {
+	display: none;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.burger:before,
+.burger__center-line,
+.burger:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	background: #fff;
+	transition: transform 0.3s, top 0.3s 0.3s, bottom 0.3s 0.3s;
+}
+
+.burger:before {
+	top: 0;
+}
+
+.burger__center-line {
+	top: 40%;
+}
+
+.burger:after {
+	bottom: 0;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+
+	.nav {
+		font-size: 0.75rem;
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	.page.burger-active {
+		overflow: hidden;
+	}
+
+	.nav {
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		z-index: -2;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;
+		background: rgba(32,32,32,0.9);
+		overflow: auto;
+		transition: 0.3s;
+	}
+
+	.nav.burger-active {
+		top: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.burger.burger-active:before {
+		top: 40%;
+		transform: rotate(45deg);
+		transition: top 0.3s, transform 0.3s 0.3s;
+	}
+
+	.burger.burger-active .burger__center-line {
+		transform: scale(0);
+	}
+
+	.burger.burger-active:after {
+		bottom: 40%;
+		transform: rotate(-45deg);
+		transition: bottom 0.3s, transform 0.3s 0.3s;
+	}
+
+}
+/* Шапка сайта end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Начальная секция start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_welcome {
+	background-image: url(../img/bg-section-main.jpg);
+	background-attachment: scroll;
+}
+
+.title-screen_welcome h1 {
+	max-width: 730px;
+	padding: 20px 0;
+	border-bottom: 1px solid #fff;
+	font-size: 1.875rem;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.title-screen_welcome img {
+	display: block;
+	max-width: 100%;
+	margin: 30px auto;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+	.title-screen_welcome h1 {
+		padding: 5px 0;
+		font-size: 1.6rem;
+	}
+
+	.title-screen_welcome img {
+		margin: 10px auto;
+	}
+
+}
+/* Начальная секция end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция цен start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_pricing {
+	background-image: url(../img/bg-section-pricing.jpg);
+}
+
+.pricing-demo {
+	align-self: start;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.pricing-demo__filter-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.pricing-demo__filter {
+	padding: 6px 10px;
+	margin: 0 8px;
+	cursor: pointer;
+}
+
+.pricing-demo__filter.active {
+	border-bottom: 1px solid;
+}
+
+.pricing-demo__card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.pricing-demo__card {
+	width: 207px;
+	margin: 10px;
+}
+
+.pricing-demo__card img {
+	width: 100%;
+}
+
+.pricing-demo__card-price {
+	padding: 10px;
+	background: rgb(211, 15, 34);
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+	.pricing-demo__card {
+		margin: 1vw;
+		width: 47vw;
+	}
+
+	.pricing-demo__card-price {
+		padding: 0px;
+		font-size: 1.5rem;
+	}
+
+}
+/* Секция цен end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция beer start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_beer {
+	background-image: url(../img/bg-section-beer.jpg);
+}
+/* Секция beer end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция bread start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_bread {
+	background-image: url(../img/bg-section-bread.jpg);
+}
+/* Секция bread end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция рекомендемых блюд start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_featured {
+	background-image: url(../img/bg-section-featured.jpg);
+}
+
+.slider {
+	overflow: hidden;
+}
+
+.slider__track {
+	display: flex;
+	height: 100%;
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.slider__slide {
+	min-width: 100%;
+	height: 100%;
+}
+
+.slider__slide img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.slider__pager {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+.slider__pager-dot {
+	width: 12px;
+	height: 12px;
+	margin: 0 9px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider__pager-dot.active {
+	background: #fff;
+}
+/* Секция рекомендемых блюд end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция бронирования столика start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.title-screen_reservation {
+	background-image: url(../img/bg-section-featured.jpg);
+}
+
+.reserv {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reserv__form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 66.66%;
+}
+
+.reserv__form-col {
+	width: 50%;
+}
+
+.reserv__hours {
+	width: 33.33%;
+	padding: 15px;
+}
+
+.reserv__title {
+	padding: 0 0 20px;
+	margin: 0 0  20px;
+	border-bottom: 1px solid #eee;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.reserv__txt {
+	padding: 10px 0;
+	border-bottom: 1px solid;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+
+	.reserv__hours,
+	.reserv__form {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.reserv__form-col {
+		width: 100%;
+	}
+
+}
+/* Секция бронирования столика end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Секция контактов start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.contact {
+	padding: 85px 0 18px;
+	background: #000;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+
+.contact__conent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact__module {
+	width: 50%;
+}
+
+.contact__title {
+	margin: 0 0 18px;
+	color: #63C85D;
+	font-size: 1.33em;
+	font-weight: 900;
+	letter-spacing: 0.04em;
+}
+
+.contact__link:hover {
+	color: #63C85D;
+}
+
+.contact__ico-group {
+	display: flex;
+	justify-content: center;
+}
+
+.contact__ico {
+	width: 1.25em;
+	margin: 0 15px;
+	margin: 0 0.625em;
+}
+
+.contact__ico img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.map {
+	width: 100%;
+}
+
+.feedback {
+	padding: 25px;
+}
+
+.feedback__form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feedback__form-col {
+	width: 50%;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+	.contact {
+		font-size: 1.2rem;
+		padding: 70px 0 18px;
+	}
+
+	.feedback__form-col {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.contact {
+		padding: 50px 0 18px;
+	}
+
+	.contact__module {
+		width: 100%;
+	}
+
+	.contact__title {
+		margin: 18px 0 9px;
+	}
+
+}
+/* Секция контактов end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* Стили для IE end ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.title-screen,
+	.page__screen {
+		height: 100vh;
+		background-attachment: scroll;
+	}
+
+	.wrapper {
+		margin: 0;
+	}
+
+	.pricing-demo {
+		margin: 0;
+		width: 1100px;
+	}
+
+}
+/* Стили для IE start ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
